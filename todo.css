@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+header
+{
+    background: orangered;
+    padding:30px 40px;
+    color:black;
+    text-align:center;
+}
+h1
+{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration:underline;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+input 
+{
+  width: 80%;
+  margin-right: 0;
+  padding: 10px;
+  border:black;
+  border-width: medium;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+  .addbtn {
+    width: 50%;
+    padding: 13px;
+    margin-left:0;
+    background: #574d4dd5;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .addbtn:hover {
+    background-color: rgba(0, 0, 0, 0.452);
+    color: #FFF;
+  }
+  
+  /* Style the list items */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    list-style-type:armenian;
+    background: rgba(255, 237, 71, 0.952);
+    font-size: 18px;
+    transition: 0.2s;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:black;
+
+    /* make the list items unselectable*/ 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+    background: #e1fa00;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+    background: rgb(160, 255, 51);
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+    background: rgb(1, 255, 43);
+    color: #fff;
+    text-decoration:line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+    content: "";
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Style the trash button */
+  .far {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 14px 16px 14px 16px;
+  }
+  
+  .far:hover {
+    background-color: tomato;
+    color: white;
+  }
